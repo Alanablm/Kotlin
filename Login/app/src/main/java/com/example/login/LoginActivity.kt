@@ -19,13 +19,13 @@ class LoginActivity : AppCompatActivity() {
             val username = binding.editUsername.text.toString().trim()
             val password = binding.editPassword.text.toString().trim()
 
-            if (username.equals("abc") && password.equals("123")) {
+            if (username.equals("Alana Belei Lucena Mattos") && password.equals("001")) {
                 val i = Intent(this, MainActivity::class.java)
                 i.putExtra("username", username)
                 startActivity(i)
                 finish()
             } else {
-                Toast.makeText(applicationContext, "Errou", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "Errou!!!!", Toast.LENGTH_LONG).show()
             }
         }
 
